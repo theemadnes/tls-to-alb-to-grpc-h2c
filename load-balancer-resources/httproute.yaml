@@ -16,7 +16,9 @@ spec:
   - matches:
     - path:
         type: PathPrefix
-        value: / # Matches all methods of whereami.Whereami
+        #value: / # Matches all methods of whereami.Whereami
+        value: /whereami.Whereami
+    
     backendRefs:
     - group: net.gke.io # for multi-cluster; not needed for single-cluster
       #namespace: grpc-h2c # replace with your values
