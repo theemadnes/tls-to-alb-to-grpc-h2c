@@ -52,7 +52,6 @@ kubectl apply -f load-balancer-resources/
 ### call the service using grpcurl
 
 ```
-grpcurl frontend.endpoints.e2m-private-test-01.cloud.goog:443 whereami.Whereami.GetPayload
 grpcurl -proto whereami.proto frontend.endpoints.e2m-private-test-01.cloud.goog:443 whereami.Whereami.GetPayload
 ```
 
