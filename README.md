@@ -58,7 +58,7 @@ grpcurl -proto whereami.proto frontend.endpoints.e2m-private-test-01.cloud.goog:
 
 output:
 ```
-$ grpcurl -proto frontend.endpoints.e2m-private-test-01.cloud.goog:443 whereami.Whereami.GetPayload
+$ grpcurl -proto whereami.proto frontend.endpoints.e2m-private-test-01.cloud.goog:443 whereami.Whereami.GetPayload
 {
   "cluster_name": "edge-to-mesh-01",
   "metadata": "grpc-frontend",
