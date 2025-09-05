@@ -10,8 +10,8 @@ spec:
     name: external-http # Name of your GKE Gateway
     namespace: asm-ingress # replace with your gateway's namespace
     kind: Gateway
-  hostnames:
-    - "frontend.endpoints.e2m-private-test-01.cloud.goog" # replace with your hostname
+  #hostnames:
+  #  - "frontend.endpoints.e2m-private-test-01.cloud.goog" # replace with your hostname
   rules:
   - matches:
     - path:
